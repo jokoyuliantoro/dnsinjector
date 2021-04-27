@@ -9,7 +9,6 @@ dpo = 53
 
 def dnsq(dom):
   tid = random.randrange(1,65535)
-  msg = struct.pack('!H10s',tid,b'\x01\x20\x00\x01\x00\x00\x00\x00\x00\x00')
   ds = dom.split('.')
   q = bytearray()
   for k in ds:
